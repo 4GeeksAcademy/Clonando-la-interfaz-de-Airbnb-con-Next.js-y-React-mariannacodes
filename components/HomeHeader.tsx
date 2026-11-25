@@ -9,7 +9,7 @@ interface HomeHeaderProps {
 const HomeHeader = ({ userName, location }: HomeHeaderProps) => (
   <header className="flex items-center justify-between rounded-b-3xl bg-brand px-5 pb-10 pt-6 text-white">
     <div className="flex items-center gap-3">
-      <Image src="https://i.pravatar.cc/150?img=5" alt="Avatar" width={48} height={48} className="h-12 w-12 rounded-full object-cover" />
+      <Image src="https://randomuser.me/api/portraits/women/5.jpg" alt="Foto de perfil de Marianna" width={48} height={48} className="h-12 w-12 rounded-full object-cover" />
       <div>
         <p className="font-semibold">Hola, {userName}</p>
         <p className="text-sm">📍 {location}</p>

@@ -19,7 +19,7 @@ export const listings: Listing[] = [
     pricePerNight: 125, rating: 4.9, reviews: 86, category: "cabins",
     description: "Una cabaña de madera rodeada de montañas y senderos, perfecta para desconectar.",
     amenities: ["Wi-Fi", "Calefacción", "Cocina", "Parking", "Lavadora"],
-    host: { name: "Lucía", avatar: "https://i.pravatar.cc/150?img=12", yearsHosting: 5 },
+    host: { name: "Lucía", avatar: "https://randomuser.me/api/portraits/women/12.jpg", yearsHosting: 5 },
   },
   {
     id: "atico-barcelona",
@@ -30,7 +30,7 @@ export const listings: Listing[] = [
     pricePerNight: 148, rating: 4.7, reviews: 124, category: "apartments",
     description: "Disfruta de una terraza privada y de la vida local en el corazón de Barcelona.",
     amenities: ["Wi-Fi", "Aire acondicionado", "Lavadora", "Cocina", "Desayuno"],
-    host: { name: "Marc", avatar: "https://i.pravatar.cc/150?img=27", yearsHosting: 3 },
+    host: { name: "Marc", avatar: "https://randomuser.me/api/portraits/men/27.jpg", yearsHosting: 3 },
   },
   {
     id: "casa-playa-cadiz",
@@ -41,7 +41,7 @@ export const listings: Listing[] = [
     pricePerNight: 175, rating: 4.8, reviews: 93, category: "beach",
     description: "Una casa tranquila a pocos pasos de una de las playas más bonitas de Cádiz.",
     amenities: ["Wi-Fi", "Piscina", "Aire acondicionado", "Cocina", "Parking"],
-    host: { name: "Carmen", avatar: "https://i.pravatar.cc/150?img=34", yearsHosting: 7 },
+    host: { name: "Carmen", avatar: "https://randomuser.me/api/portraits/women/34.jpg", yearsHosting: 7 },
   },
   {
     id: "velero-amsterdam",
@@ -52,7 +52,7 @@ export const listings: Listing[] = [
     pricePerNight: 132, rating: 4.6, reviews: 58, category: "boats",
     description: "Duerme en un barco con encanto y contempla los canales desde tu ventana.",
     amenities: ["Wi-Fi", "Calefacción", "Desayuno", "Cocina"],
-    host: { name: "Sofie", avatar: "https://i.pravatar.cc/150?img=41", yearsHosting: 4 },
+    host: { name: "Sofie", avatar: "https://randomuser.me/api/portraits/women/41.jpg", yearsHosting: 4 },
   },
   {
     id: "masia-girona",
@@ -63,7 +63,7 @@ export const listings: Listing[] = [
     pricePerNight: 210, rating: 5.0, reviews: 47, category: "countryside",
     description: "Una masía restaurada con jardín amplio, vistas al campo y mucha calma.",
     amenities: ["Wi-Fi", "Piscina", "Desayuno", "Calefacción", "Cocina", "Parking"],
-    host: { name: "Pau", avatar: "https://i.pravatar.cc/150?img=19", yearsHosting: 9 },
+    host: { name: "Pau", avatar: "https://randomuser.me/api/portraits/men/19.jpg", yearsHosting: 9 },
   },
   {
     id: "piso-lisboa",
@@ -74,7 +74,7 @@ export const listings: Listing[] = [
     pricePerNight: 98, rating: 4.5, reviews: 112, category: "apartments",
     description: "Un refugio lleno de luz en un barrio histórico, cerca de cafés y tranvías.",
     amenities: ["Wi-Fi", "Aire acondicionado", "Lavadora", "Cocina"],
-    host: { name: "Inês", avatar: "https://i.pravatar.cc/150?img=56", yearsHosting: 2 },
+    host: { name: "Inês", avatar: "https://randomuser.me/api/portraits/women/56.jpg", yearsHosting: 2 },
   },
   {
     id: "cabanas-costa-brava",
@@ -85,7 +85,7 @@ export const listings: Listing[] = [
     pricePerNight: 160, rating: 4.8, reviews: 71, category: "cabins",
     description: "Una estancia íntima entre pinos, calas y el azul de la Costa Brava.",
     amenities: ["Wi-Fi", "Aire acondicionado", "Cocina", "Parking", "Calefacción"],
-    host: { name: "Jordi", avatar: "https://i.pravatar.cc/150?img=63", yearsHosting: 6 },
+    host: { name: "Jordi", avatar: "https://randomuser.me/api/portraits/men/63.jpg", yearsHosting: 6 },
   },
   {
     id: "casa-campo-toscana",
@@ -96,6 +96,6 @@ export const listings: Listing[] = [
     pricePerNight: 235, rating: 4.9, reviews: 65, category: "countryside",
     description: "Una villa de piedra entre colinas toscanas, ideal para compartir y descansar.",
     amenities: ["Wi-Fi", "Piscina", "Desayuno", "Aire acondicionado", "Cocina", "Parking"],
-    host: { name: "Giulia", avatar: "https://i.pravatar.cc/150?img=70", yearsHosting: 8 },
+    host: { name: "Giulia", avatar: "https://randomuser.me/api/portraits/women/70.jpg", yearsHosting: 8 },
   },
 ];
