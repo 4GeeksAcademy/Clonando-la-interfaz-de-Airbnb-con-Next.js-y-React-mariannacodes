@@ -28,14 +28,16 @@ const Home = () => {
 
   return (
     <main className="min-h-screen bg-gray-50 pb-28">
-      <HomeHeader userName="Marianna" location="Madrid, España" />
-      <CategoryBar categories={categories} active={activeCategory} onSelect={setActiveCategory} />
-      <div className="py-4"><PriceToggle enabled={showTotal} onToggle={() => setShowTotal(!showTotal)} /></div>
-      {loading ? <p className="px-5 py-8 text-center text-gray-500">Cargando alojamientos…</p>
-        : visible.length === 0 ? <p className="px-5 py-8 text-center text-gray-500">No hay alojamientos en esta categoría</p>
-          : <section className="grid gap-4 px-5 md:grid-cols-2 lg:grid-cols-3">
-            {visible.map((listing) => <ListingCard key={listing.id} listing={listing} showTotal={showTotal} />)}
-          </section>}
+      <div className="mx-auto max-w-6xl">
+        <HomeHeader userName="Marianna" location="Madrid, España" />
+        <CategoryBar categories={categories} active={activeCategory} onSelect={setActiveCategory} />
+        <div className="py-4"><PriceToggle enabled={showTotal} onToggle={() => setShowTotal(!showTotal)} /></div>
+        {loading ? <p className="px-5 py-8 text-center text-gray-500">Cargando alojamientos…</p>
+          : visible.length === 0 ? <p className="px-5 py-8 text-center text-gray-500">No hay alojamientos en esta categoría</p>
+            : <section className="grid gap-4 px-5 md:grid-cols-2 lg:grid-cols-3">
+              {visible.map((listing) => <ListingCard key={listing.id} listing={listing} showTotal={showTotal} />)}
+            </section>}
+      </div>
       <MapButton />
       <BottomNav />
     </main>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { plural } from "@/lib/format";
 import type { Listing } from "@/types/listing";
 
 interface ListingCardProps {
@@ -20,7 +21,9 @@ const ListingCard = ({ listing, showTotal = false }: ListingCardProps) => (
       </div>
       <p className="shrink-0 text-sm"><span className="text-brand">★</span> {listing.rating} <span className="text-gray-500">({listing.reviews})</span></p>
     </div>
-    <p className="text-sm text-gray-500">{listing.rooms} habitaciones · {listing.beds} camas · {listing.guests} huéspedes · {listing.bathrooms} baños</p>
+    <p className="text-sm text-gray-500">
+      {plural(listing.rooms, "habitación", "habitaciones")} · {plural(listing.beds, "cama", "camas")} · {plural(listing.guests, "huésped", "huéspedes")} · {plural(listing.bathrooms, "baño", "baños")}
+    </p>
     <p className="mt-2"><span className="font-semibold">{showTotal ? listing.pricePerNight * 2 : listing.pricePerNight} €</span>{" "}
       <span className="text-sm text-gray-500">{showTotal ? "total (2 noches)" : "/ noche"}</span>
     </p>

@@ -7,7 +7,7 @@ interface CategoryBarProps {
 }
 
 const CategoryBar = ({ categories, active, onSelect }: CategoryBarProps) => (
-  <nav aria-label="Categorías" className="mx-5 -mt-6 rounded-2xl bg-white p-3 shadow-sm">
+  <nav aria-label="Categorías" className="relative z-10 mx-5 -mt-6 rounded-2xl bg-white p-3 shadow-sm">
     <div className="flex gap-2 overflow-x-auto">
       {categories.map((category) => (
         <button key={category.id} type="button" onClick={() => onSelect(category.id)}
